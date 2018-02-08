@@ -36,10 +36,11 @@
 	  <div class="span6 offset2">
 	   <ul class="nav nav-tabs">
 		<li class="active"> <a href="index.html">Home</a></li>
-		<li> <a href="dataset.html">Dataset</a></li>
-		<li><a href="tasks.html">Tasks</a></li>
+		<!-- <li> <a href="dataset.html">Dataset</a></li> -->
+		<!-- <li><a href="tasks.html">Tasks</a></li> -->
 		<li><a href="evaluation.html">Evaluation</a></li>
 		<li><a href="results.html">Results</a></li>
+		<li><a href="contact.html">Contact</a></li>
 		<br />
 	   </ul>
 	  </div>
@@ -48,10 +49,20 @@
 	<div class="row">
 	<div class="span12">
 
-	<h3 style="text-align:left; margin-bottom:10px; margin-top:20px; ">  
-		Introduction
-	</h3>
-	<p style="text-align:justify;">
+	<h2 style="text-align:left; margin-bottom:10px; margin-top:20px; ">  
+		News
+	</h2>
+	<p>
+		<ul>
+			<li>
+					<strong>2018-2-7</strong> The website for ODAI on ICPR'2018 is online. <strong class="news">New</strong>
+			</li>
+		</ul>
+	</p>
+	<h2 style="text-align:left; margin-bottom:10px; margin-top:20px; ">  
+		Description
+	</h2>
+	<!-- <p style="text-align:justify;">
 		Object detection in Earth Vision, also known as Earth Observation and Remote Sensing, refers to
 		localizing objects of interest (e.g., vehicles and airplanes) on the earth’s surface and predicting their
 		corresponding land-use categories. It contains <strong style="color:blue">2806</strong>  aerial images from different sensors and platforms. 
@@ -60,60 +71,131 @@
 		by experts in aerial image interpretation using 15 common object categories. The fully annotated DOTA images 
 		contains <strong style="color:blue">188, 282</strong> instances, each of which is labeled by an arbitrary (8 d.o.f.) quadrilateral. 
 		<!-- See <a href="dataset.html">Dataset</a> for details. -->
-	</p>
-	<p style="text-align:justify; font-size: 17px">
+	<!-- </p> -->
+	<!-- <p style="text-align:justify; font-size: 17px">
 		For more details, refer to the <a href="https://arxiv.org/abs/1711.10398"> <strong style="color:blue">arXiv preprint</strong></a> of DOTA.                                                          
+	</p> -->
+
+	<p>
+			Object detection in Earth Vision, also known as Earth Observation and Remote Sensing, refers to
+			localizing objects of interest (e.g., vehicles and airplanes) on the earth’s surface and predicting their
+			corresponding land-use categories. The task of object detection in aerial images is distinguished
+			from the conventional object detection task in the following respects:
+		<ul>
+				<li>
+					The scale variations of object instances in aerial images are considerably huge.
+				</li> 
+				<li>
+					Many small object instances are densely distributed in aerial images, for example, the ships in a harbor and the vehicles in a parking lot.
+				</li> 
+				<li>
+					Objects in aerial images often appear in arbitrary orientations.				
+				</li>
+		</ul>
+
+
+	</p>
+	<p>
+			This competition features a new image database of object detection in aerial images. We propose
+			a large-scale dataset which is based on <a href="../DOTAweb/index.html">DOTA</a> with nearly <strong style="color:blue">3000</strong> 
+			 large-size images <strong style="color:blue">(4000 &times 4000)</strong>, which contain <strong style="color:blue">15</strong>categories
+			
+	</p>
+	<p>
+			Through the dataset and the tasks, we aim to draw attention from the a wide range of communities
+			and call for more future research and efforts on the problems of object dection in aerial
+			images. We believe the competition will not only promote the development of algorithms for object
+			detection in Earth Vision, but also pose interesting algorithmic questions to general object
+			detection in computer vision.
 	</p>
 
-
-	<h3 style="text-align:left; margin-bottom:10px; margin-top:20px; ">  
-		News
-	</h3>
-	<ul>
-		<li style="font-size:16px">
-				<strong>2018-1-27</strong> Fix a problem of annotations, new version annotations are released.<strong class="news">New</strong>
-		</li>
-
-		<li>
-			<strong>2018-1-26</strong> The DOAI-18 submission is open now! All competitors can submit the DOAI-18 results under the guidance of
-			 <a href="tasks.html">Tasks Page</a> and <a href="evaluation.html">Evaluation Page</a> <strong class="news">New</strong>  
-		</li>
-
-		<li style="font-size:16px">
-		  <strong>2018-1-26</strong> DOAI-18 released with all images and oriented bounding box annotations for training and vallidation! 
-		  <strong class="news">New</strong>
-		</li>
-	</ul>						
-
-	<h3>
+	<h2>
 		Dates
-	</h3>
+	</h2>
 	<ul>
-		<li>
-			Train, validation and test sets of DOTA-v1 are avaliable 
-		</li>
 		<!-- <li>
-		 	<strong>Registration and Submission open</strong> February 1, 2018
+			<strong>Whole Train, validation sets and part of test images are avaliable</strong> February 1, 2018	 
+		</li> -->
+		<!-- <li>
+				<strong>Registration and Submission open</strong> February 1, 2018
 		</li> -->
 		<li>
-			Extra test images for ICPR-2018 available
+			<strong>Extra test images for ODAI-18 available</strong> March 15, 2018
+		</li>
+		<li>
+			<strong>Submission open</strong> March 15, 2018
 		</li>
 		<li>
 			<strong>Submission deadline</strong> April 15, 2018 
 		</li>
+
 		<li>
 			<strong>Submission of competition report</strong> April 30, 2018
 		</li>
 	</ul>
 
-	<h3>
-	   Examples of Annotated Images
+	<h2>
+		Tasks
+	</h2>
+	<p>
+			We propose two tasks for this competition, namely object detection with horizontal bounding box
+			and object detection with oriented bounding box.
+			Task1 uses the initial annotation as ground truth. 
+			Task2 uses the generated axis-aligned bounding boxes as ground truth. 
+			The results from task2 are of great practical value. We recommond you to test your algorithms by way of Task1.
+	</p>
+	<!-- <h3>
+		Task1 - Detection with oriented bounding boxes
 	</h3>
-	  <img src="instances-DOTA.jpg" class="img-responsive center-block" />
-	
+	<p>
+			The aim of this task is to locate the ground object instances with an oriented bounding box. 
+			The oriented bounding box follows the same format with the original annotation
+	</p>
 	<h3>
+		Task2 - Detection with horizontal bounding boxes
+	</h3>
+	<p>
+			Detecting object with horizontal bounding boxes is usual in many previous competitions for object detection. 
+			The aim of this task is to accurately localize the instance in terms of horizontal bounding box with (x, y, w, h) format. 
+			In the task, the ground truths for training and testing are generated by calculating the axis-aligned bounding boxes over original annotated bounding boxes.
+	</p> -->
+	<strong>
+			For more details and submission format, refer to the <a href="../DOTAweb/tasks.html">Tasks Page </a> on DOTA.
+	</strong>
+	<h2>
+		Dataset 
+	</h2>
+	<p>
+		The dataset of ODAI is based on the DOTA dataset. 
+		Specificly, the Train and Validation sets are the same as <a href="../DOTAweb/dataset.html">DOTA-v1</a>.
+		The images of Test set are partly from <a href="../DOTAweb/dataset.html">DOTA-v1</a>, other test images are not available currently.
+		For use of the data, you need to cite our <a href="https://arxiv.org/abs/1711.10398">paper</a> and 
+		follow the <a href="../DOTAweb/dataset.html">usage license</a>  described in <a href="../DOTAweb/index.html">DOTA-v1</a>.
+		The data of the DOTA can be <strong style="color:blue">downloaded at <a href="../DOTAweb/dataset.html">DOTA Dataset Page</a></strong>.
+	</p>
+
+	<ul>
+		<!-- <li style="font-size:16px">
+				<strong>2018-1-27</strong> Fix a problem of annotations, new version annotations are released.<strong class="news">New</strong>
+		</li> -->
+
+		<!-- <li>
+			<strong>2018-1-26</strong> The ODAI-18 submission is open now! All competitors can submit the ODAI-18 results under the guidance of
+			 <a href="tasks.html">Tasks Page</a> and <a href="evaluation.html">Evaluation Page</a> <strong class="news">New</strong>  
+		</li> -->
+
+		<!-- <li style="font-size:16px"> -->
+		  <!-- <strong>2018-1-26</strong> DOAI-18 released with all images and oriented bounding box annotations for training and vallidation!  -->
+		  <!-- <strong>2018-1-26</strong> ODAI-18 released with all images and oriented bounding box annotations for training and vallidation, and part of test images, for detail see  -->
+		  <!-- <a href="tasks.html">overview</a> in tasks -->
+		  <!-- <strong>2018-1-26</strong>  -->
+		  <!-- <strong class="news">New</strong> -->
+		<!-- </li> -->
+	</ul>						
+
+	<h2>
 		Organizers
-	</h3>
+	</h2>
 	<ul>
 		<li>
 			<strong>Gui-Song Xia</strong> Professor at LIESMARS,Wuhan University
@@ -140,8 +222,8 @@
 			<strong>Liangpei Zhang</strong> Professor at LIESMARS, Wuhan University
 		</li>
 	</ul>
-	<div class="section bibtex">
-	<h3>
+	<!-- <div class="section bibtex"> -->
+	<!-- <h3>
 		Citation
 	</h3>
 	<p> If you make use of the DOTA dataset, please cite our following paper: </p>
@@ -152,19 +234,8 @@ author={Xia, Gui-Song and Bai, Xiang and Ding, Jian and Zhu, Zhen and Belongie, 
 journal={arXiv preprint arXiv:1711.10398},
 year={2017}
 }
-	</pre>
-	</div>
-	<h3>
-	Contact
-	</h3>
-	<p>
-	If you have any the problem or feedback in using DOTA, please contact 
-	<ul>
-		<li>Gui-Song Xia at <strong>guisong.xia@whu.edu.cn</strong>, </li>
-		<li>Xiang Bai at <strong>xbai@hust.edu.cn</strong>, </li>
-		<li>Jian Ding at <strong>jian.ding@whu.edu.cn</strong>,</li>
-		<li>Zhen Zhu at <strong>zzhu@hust.edu.cn</strong>.</li>
-	</ul>
+	</pre> -->
+	<!-- </div> -->
 	</p>
 	<br>						
 	</div>
