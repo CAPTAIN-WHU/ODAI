@@ -1,13 +1,22 @@
+td.details-control {
+    background: url('../resources/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+tr.shown td.details-control {
+    background: url('../resources/details_close.png') no-repeat center center;
+}
+
 p {font-size: 17px;
 }
 td {text-align: center; }
 /* figcaption {text-align: center; position: inherit;} */
 ul {font-size: 17px;}
 ol {font-size: 17px;}
-th:nth-child(4), td:nth-child(4){border-right: 2px solid #ddd}
+/* th:nth-child(4), td:nth-child(4){border-right: 2px solid #ddd} */
 /* table {border-style:solid; } */
 /* .table-a */
- table{border: 2px solid #ddd}
+ /* table{border: 2px solid #ddd} */
+th {text-align: center;}
 
  .jumbotron {
     background: url('../images/background4.jpg');

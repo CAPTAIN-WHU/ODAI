@@ -4,43 +4,62 @@
 <head>
 	<meta charset="utf-8">
 	<title>ODAI</title>
+	<!-- For data table -->
+	<script src="css/jquery-3.2.1-dist.min.js"></script>
+	<!-- <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css" />
+	<script src="https://cdn.datatables.net/buttons/1.4.0/js/dataTables.buttons.min.js"></script>
+	<script src="https://cdn.datatables.net/buttons/1.4.0/js/buttons.html5.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+	<script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.32/build/pdfmake.min.js"></script>
+	<script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.32/build/vfs_fonts.js"></script>
+	<link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.4.0/css/buttons.dataTables.min.css" />
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" /> -->
+
+	<!-- For dataTable2 -->
+	<!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+	<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+
 	<!-- <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">    
-	<link rel="stylesheet" type="text/css" href="css/mystyle.css"
-	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css" />
+	<!-- <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"> -->
+	</script>
 	<!-- <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
-	
+
 	<style>
-        body {
-               background-color : rgb(250,250,250); /*UCLA bgcolor*/
-        }
-    </style>	
+		body {
+			background-color: rgb(250, 250, 250);
+			/*UCLA bgcolor*/
+		}
+	</style>
 </head>
 
 <body>
 
 	<div class="container">
-		
-			<div class="jumbotron">
-					<div class="content">
-						<h1 style="text-align:center; margin-top:80px; font-weight: bold; color:rgb(100,10,250); font-size: 48px;">
-							Object Detection in Aerial Images (ODAI)
-						</h1>
-			
-						<!-- <p style="text-align:center; color:blue; position:relative; top:7%"> -->
-						<p style="text-align:center; margin-top:15px; color: rgb(10,10,250); font-size: 32px;">
-							<strong>
-									<span style="font-style:italic">A Contest on ICPR'2018 </span>
-							</strong> 
-						</p>
-						<!-- <body background="images/largeimage2.jpg"></body> -->
-						<!-- <img src="images/largeimage2.jpg" class="img-responsive center-block" /> -->
-					</div>				
-						
-				</div>	
+
+		<div class="jumbotron">
+			<div class="content">
+				<h1 style="text-align:center; margin-top:80px; font-weight: bold; color:rgb(100,10,250); font-size: 48px;">
+					Object Detection in Aerial Images (ODAI)
+				</h1>
+
+				<!-- <p style="text-align:center; color:blue; position:relative; top:7%"> -->
+				<p style="text-align:center; margin-top:15px; color: rgb(10,10,250); font-size: 32px;">
+					<strong>
+						<span style="font-style:italic">A Contest on ICPR'2018 </span>
+					</strong>
+				</p>
+				<!-- <body background="images/largeimage2.jpg"></body> -->
+				<!-- <img src="images/largeimage2.jpg" class="img-responsive center-block" /> -->
+			</div>
+
+		</div>
 
 		<div class="row">
-			<div class="span12">			
+			<div class="span12">
 
 				<div class="row">
 					<!-- <div class="span4">
@@ -59,14 +78,14 @@
 							<li>
 								<a href="evaluation.html">Evaluation</a>
 							</li>
-							
+
 							<li class="active">
 								<a href="results.html">Results</a>
 							</li>
 							<li>
 								<a href="contact.html">Contact</a>
 							</li>
-							
+
 							<br />
 						</ul>
 					</div>
@@ -76,794 +95,82 @@
 
 				<div class="row">
 					<div class="span12">
-							<table class="table table-striped" class="solid">
-								<br>
-									<p>
-										The contest ODAI 2018 is end.
-										For each Task, the top 7 teams and their mAP are shown on the Leaderboard. 
-									</p>
-									<h2>Task1 - Oriented Leaderboard </h2>
-									<thead>
-										<tr>
-											<!-- <th>Rank</th>
-											<th>Team Name</th>
-											<th>Team Member</th>
-											<th>Institute</th>
-											<th border="1"> <strong style="font-size:16px; background-color:yellow;">mAP</strong></th>
-											<th>plane</th>
-											<th>baseball diamond</th>
-											<th>bridge</th>
-											<th>ground track field</th>
-											<th>small vehicle</th>
-											<th>large vehicle</th>
-											<th>ship</th>
-											<th>tennis court</th>
-											<th>basketball court</th>
-											<th>storage tank</th>
-											<th>soccer ball field</th>
-											<th>roundabout</th>
-											<th>harbor</th>
-											<th>swimming pool</th>
-											<th>helicopter</th> -->
-											<th>Rank</th>
-											<th>Team Name</th>
-											<th>Team Member</th>
-											<th>Institute</th>
-											<th> <strong style="font-size:16px; background-color:yellow;" >mAP</strong> </th>
-											<th>Plane</th>
-											<th>BD</th>
-											<th>Bridge</th>
-											<th>GTF</th>
-											<th>SV</th>
-											<th>LV</th>
-											<th>Ship</th>
-											<th>TC</th>
-											<th>BC</th>
-											<th>ST</th>
-											<th>SBF</th>
-											<th>RA</th>
-											<th>Harbor</th>
-											<th>SP</th>
-											<th>HC</th>
-										</tr>
+						<h1>Task1 - Oriented Leaderboard</h1>
+						<table id="Task1" class="display" style="width:100%">
+							<thead>
+								<tr>
+									<th></th>
+									<th>Team Name</th>
+									<!-- <th>Team Member</th> -->
+									<!-- <th>Institute</th> -->
+									<th> mAP</strong> </th>
+									<th>Plane</th>
+									<th>BD</th>
+									<th>Bridge</th>
+									<th>GTF</th>
+									<th>SV</th>
+									<th>LV</th>
+									<th>Ship</th>
+									<th>TC</th>
+									<th>BC</th>
+									<th>ST</th>
+									<th>SBF</th>
+									<th>RA</th>
+									<th>Harbor</th>
+									<th>SP</th>
+									<th>HC</th>
+								</tr>
+							</thead>
+							<!-- <tfoot>
+								<tr>
+									<th></th>
+									<th>Name</th>
+									<th>Position</th>
+									<th>Office</th>
+									<th>Salary</th>
+								</tr>
+							</tfoot> -->
+						</table>
 
-										<tr>
-											<td>1</td>
-											<td>
-											USTC-NELSLIP
-											</td>
-											<td>
-											Yixing Zhu, Chixiang Ma, Jun Du
-											</td>
-											<td>
-											<!-- National Engineering Laboratory for Speech and Language Information Processing, University of Science and Technology of China -->
-											USTC
-										    </td>
-											<td>
-											0.705
-											</td>
-											<td>0.9</td>
-											<td>0.85</td>
-											<td>0.43</td>
-											<td>0.69</td>
-											<td>0.74</td>
-											<td>0.77</td>
-											<td>0.73</td>
-											<td>0.9</td>
-											<td>0.84</td>
-											<td>0.76</td>
-											<td>0.64</td>
-											<td>0.5</td>
-											<td>0.56</td>
-											<td>0.63</td>
-											<td>0.64</td>
-											</tr>
-											<tr>
-											<td>2</td>
-											<td>
-											jmkoo
-											</td>
-											<td>
-											Jamyoung Koo
-											</td>
-											<td>
-											satreci
-											</td>
-											<td>
-											0.622
-											</td>
-											<td>0.88</td>
-											<td>0.68</td>
-											<td>0.46</td>
-											<td>0.51</td>
-											<td>0.7</td>
-											<td>0.68</td>
-											<td>0.71</td>
-											<td>0.9</td>
-											<td>0.68</td>
-											<td>0.67</td>
-											<td>0.4</td>
-											<td>0.43</td>
-											<td>0.56</td>
-											<td>0.54</td>
-											<td>0.53</td>
-											</tr>
-											<tr>
-											<td>3</td>
-											<td>
-											HUST_MCLAB
-											</td>
-											<td>
-											Xudong Rao, Xinggang Wang, Wenyu Liu
-											</td>
-											<td>
-											HUST
-											</td>
-											<td>
-											0.598
-											</td>
-											<td>0.89</td>
-											<td>0.75</td>
-											<td>0.35</td>
-											<td>0.63</td>
-											<td>0.59</td>
-											<td>0.63</td>
-											<td>0.64</td>
-											<td>0.9</td>
-											<td>0.7</td>
-											<td>0.69</td>
-											<td>0.51</td>
-											<td>0.39</td>
-											<td>0.47</td>
-											<td>0.44</td>
-											<td>0.4</td>
-											</tr>
-											<tr>
-											<td>4</td>
-											<td>
-											NWPU_SAIP
-											</td>
-											<td>
-											yuzhu zhang，peng wang，ying li，chunhua shen
-											</td>
-											<td>
-											Northwestern Polytechnical University
-											</td>
-											<td>
-											0.578
-											</td>
-											<td>0.8</td>
-											<td>0.68</td>
-											<td>0.22</td>
-											<td>0.61</td>
-											<td>0.6</td>
-											<td>0.66</td>
-											<td>0.57</td>
-											<td>0.89</td>
-											<td>0.75</td>
-											<td>0.67</td>
-											<td>0.61</td>
-											<td>0.38</td>
-											<td>0.43</td>
-											<td>0.39</td>
-											<td>0.42</td>
-											</tr>
-											<tr>
-											<td>5</td>
-											<td>
-											changzhonghan
-											</td>
-											<td>
-											Ding Ni, Zhonghan Chang
-											</td>
-											<td>
-											Institute of Electrics, Chinese Academy of Sciences
-											</td>
-											<td>
-											0.531
-											</td>
-											<td>0.8</td>
-											<td>0.45</td>
-											<td>0.43</td>
-											<td>0.47</td>
-											<td>0.66</td>
-											<td>0.7</td>
-											<td>0.69</td>
-											<td>0.9</td>
-											<td>0.66</td>
-											<td>0.7</td>
-											<td>0.44</td>
-											<td>0.34</td>
-											<td>0.46</td>
-											<td>0.0</td>
-											<td>0.27</td>
-											</tr>
-											<tr>
-											<td>6</td>
-											<td>
-											madebyrag
-											</td>
-											<td>
-											Mingtao Fu, Yongchao Xu
-											</td>
-											<td>
-											HUST
-											</td>
-											<td>
-											0.506
-											</td>
-											<td>0.79</td>
-											<td>0.74</td>
-											<td>0.16</td>
-											<td>0.61</td>
-											<td>0.34</td>
-											<td>0.42</td>
-											<td>0.34</td>
-											<td>0.87</td>
-											<td>0.66</td>
-											<td>0.53</td>
-											<td>0.54</td>
-											<td>0.36</td>
-											<td>0.38</td>
-											<td>0.39</td>
-											<td>0.46</td>
-											</tr>
-											<tr>
-											<td>7</td>
-											<td>
-											mfhan
-											</td>
-											<td>
-											Mingfeihan, Guiyang Liu
-											</td>
-											<td>
-											CSU, CAS
-											</td>
-											<td>
-											0.42
-											</td>
-											<td>0.75</td>
-											<td>0.53</td>
-											<td>0.13</td>
-											<td>0.35</td>
-											<td>0.55</td>
-											<td>0.55</td>
-											<td>0.44</td>
-											<td>0.77</td>
-											<td>0.44</td>
-											<td>0.49</td>
-											<td>0.18</td>
-											<td>0.29</td>
-											<td>0.31</td>
-											<td>0.32</td>
-											<td>0.19</td>
-											</tr>
-											<tr>
-											<!-- <td>8</td>
-											<td>
-											CSU_xindou
-											</td>
-											<td>
-											CSU_xindou CSU_lichen
-											</td>
-											<td>
-											school of geosciences and info-physics in csu
-											</td>
-											<td>
-											0.031
-											</td>
-											<td>0.13</td>
-											<td>0.0</td>
-											<td>0.03</td>
-											<td>0.0</td>
-											<td>0.05</td>
-											<td>0.0</td>
-											<td>0.01</td>
-											<td>0.09</td>
-											<td>0.0</td>
-											<td>0.02</td>
-											<td>0.0</td>
-											<td>0.0</td>
-											<td>0.03</td>
-											<td>0.09</td>
-											<td>0.0</td>
-											</tr> -->
-											
-											
-											
-											
-											
-											
-											
+						<h2>Task2 - Horizontal Leaderboard</h2>
+						<table id="Task2" class="display" style="width:100%">
+							<thead>
+								<tr>
+									<th></th>
+									<th>Team Name</th>
+									<!-- <th>Team Member</th> -->
+									<!-- <th>Institute</th> -->
+									<th> mAP</strong> </th>
+									<th>Plane</th>
+									<th>BD</th>
+									<th>Bridge</th>
+									<th>GTF</th>
+									<th>SV</th>
+									<th>LV</th>
+									<th>Ship</th>
+									<th>TC</th>
+									<th>BC</th>
+									<th>ST</th>
+									<th>SBF</th>
+									<th>RA</th>
+									<th>Harbor</th>
+									<th>SP</th>
+									<th>HC</th>
+									<!-- <th>extn</th> -->
+								</tr>
+							</thead>
+							<!-- <tfoot>
+								<tr>
+									<th></th>
+									<th>Name</th>
+									<th>Position</th>
+									<th>Office</th>
+									<th>extn</th>
+								</tr>
+							</tfoot> -->
+						</table>
 
-
-									</thead>
-									
-							</table>
-
-							<table class="table table-striped">
-									<h2>Task2 - Horizontal Leaderboard</h2>
-									<thead>
-										<tr>
-											<th>Rank</th>
-											<th>Team Name</th>
-											<th>Team Member</th>
-											<th>Institute</th>
-											<th> <strong style="font-size:16px; background-color:yellow;" >mAP</strong> </th>
-											<th>Plane</th>
-											<th>BD</th>
-											<th>Bridge</th>
-											<th>GTF</th>
-											<th>SV</th>
-											<th>LV</th>
-											<th>Ship</th>
-											<th>TC</th>
-											<th>BC</th>
-											<th>ST</th>
-											<th>SBF</th>
-											<th>RA</th>
-											<th>Harbor</th>
-											<th>SP</th>
-											<th>HC</th>
-										</tr>
-									</thead>
-
-									<tr>
-										<td>1</td>
-										<td>
-										USTC-NELSLIP
-										</td>
-										<td>
-										Yixing Zhu, Chixiang Ma, Jun Du
-										</td>
-										<td>
-										<!-- National Engineering Laboratory for Speech and Language Information Processing, University of Science and Technology of China -->
-										USTC
-									    </td>
-										<td>
-										0.719
-										</td>
-										<td>0.9</td>
-										<td>0.85</td>
-										<td>0.47</td>
-										<td>0.68</td>
-										<td>0.74</td>
-										<td>0.78</td>
-										<td>0.74</td>
-										<td>0.9</td>
-										<td>0.84</td>
-										<td>0.77</td>
-										<td>0.67</td>
-										<td>0.49</td>
-										<td>0.64</td>
-										<td>0.66</td>
-										<td>0.64</td>
-										</tr>
-										<tr>
-										<td>2</td>
-										<td>
-										DeepVision-UESTC
-										</td>
-										<td>
-										Hongliang LI, Qishang Cheng, Wei Li, Xiaoyu Chen, Heqian Qiu, Zichen Song, Yao Qi, Zihan Zhong
-										</td>
-										<td>
-										University of Electronic Science and Technology of China
-										</td>
-										<td>
-										0.693
-										</td>
-										<td>0.88</td>
-										<td>0.82</td>
-										<td>0.51</td>
-										<td>0.68</td>
-										<td>0.73</td>
-										<td>0.74</td>
-										<td>0.68</td>
-										<td>0.87</td>
-										<td>0.77</td>
-										<td>0.79</td>
-										<td>0.51</td>
-										<td>0.51</td>
-										<td>0.66</td>
-										<td>0.64</td>
-										<td>0.6</td>
-										</tr>
-										<tr>
-										<td>3</td>
-										<td>
-										madebyrag
-										</td>
-										<td>
-										Mingtao Fu, Yongchao Xu
-										</td>
-										<td>
-										HUST
-										</td>
-										<td>
-										0.638
-										</td>
-										<td>0.87</td>
-										<td>0.7</td>
-										<td>0.45</td>
-										<td>0.55</td>
-										<td>0.65</td>
-										<td>0.68</td>
-										<td>0.7</td>
-										<td>0.9</td>
-										<td>0.71</td>
-										<td>0.76</td>
-										<td>0.59</td>
-										<td>0.35</td>
-										<td>0.62</td>
-										<td>0.6</td>
-										<td>0.44</td>
-										</tr>
-										<tr>
-										<td>4</td>
-										<td>
-										chx
-										</td>
-										<td>
-										Xue Chuhui
-										</td>
-										<td>
-										Nanyang Technological University
-										</td>
-										<td>
-										0.595
-										</td>
-										<td>0.81</td>
-										<td>0.76</td>
-										<td>0.41</td>
-										<td>0.63</td>
-										<td>0.54</td>
-										<td>0.56</td>
-										<td>0.55</td>
-										<td>0.81</td>
-										<td>0.71</td>
-										<td>0.67</td>
-										<td>0.49</td>
-										<td>0.34</td>
-										<td>0.59</td>
-										<td>0.58</td>
-										<td>0.45</td>
-										</tr>
-										<!-- <tr>
-										<td>5</td>
-										<td>
-										chxue
-										</td>
-										<td>
-										Xue Chuhui
-										</td>
-										<td>
-										Nanyang Technological University
-										</td>
-										<td>
-										0.589
-										</td>
-										<td>0.81</td>
-										<td>0.76</td>
-										<td>0.42</td>
-										<td>0.62</td>
-										<td>0.51</td>
-										<td>0.55</td>
-										<td>0.55</td>
-										<td>0.81</td>
-										<td>0.7</td>
-										<td>0.67</td>
-										<td>0.48</td>
-										<td>0.34</td>
-										<td>0.59</td>
-										<td>0.58</td>
-										<td>0.44</td>
-										</tr> -->
-										<!-- <tr>
-										<td>6</td>
-										<td>
-										00000
-										</td>
-										<td>
-										00000
-										</td>
-										<td>
-										00000
-										</td>
-										<td>
-										0.527
-										</td>
-										<td>0.79</td>
-										<td>0.5</td>
-										<td>0.3</td>
-										<td>0.3</td>
-										<td>0.71</td>
-										<td>0.62</td>
-										<td>0.61</td>
-										<td>0.73</td>
-										<td>0.66</td>
-										<td>0.56</td>
-										<td>0.38</td>
-										<td>0.34</td>
-										<td>0.47</td>
-										<td>0.49</td>
-										<td>0.45</td>
-										</tr> -->
-										<tr>
-										<td>5</td>
-										<td>
-										yan_guoxing
-										</td>
-										<td>
-										guoxing yan, yantian wang, cong ji
-										</td>
-										<td>
-										wuhan university
-										</td>
-										<td>
-										0.527
-										</td>
-										<td>0.79</td>
-										<td>0.5</td>
-										<td>0.3</td>
-										<td>0.3</td>
-										<td>0.71</td>
-										<td>0.62</td>
-										<td>0.61</td>
-										<td>0.73</td>
-										<td>0.66</td>
-										<td>0.56</td>
-										<td>0.38</td>
-										<td>0.34</td>
-										<td>0.47</td>
-										<td>0.49</td>
-										<td>0.45</td>
-										</tr>
-										<!-- <tr>
-										<td>8</td>
-										<td>
-										0000
-										</td>
-										<td>
-										0000
-										</td>
-										<td>
-										0000
-										</td>
-										<td>
-										0.522
-										</td>
-										<td>0.79</td>
-										<td>0.5</td>
-										<td>0.3</td>
-										<td>0.3</td>
-										<td>0.71</td>
-										<td>0.62</td>
-										<td>0.61</td>
-										<td>0.73</td>
-										<td>0.66</td>
-										<td>0.56</td>
-										<td>0.38</td>
-										<td>0.31</td>
-										<td>0.47</td>
-										<td>0.44</td>
-										<td>0.45</td>
-										</tr> -->
-										<tr>
-										<td>6</td>
-										<td>
-										xdrao
-										</td>
-										<td>
-										Xudong Rao
-										</td>
-										<td>
-										HUST MCLab
-										</td>
-										<td>
-										0.521
-										</td>
-										<td>0.73</td>
-										<td>0.64</td>
-										<td>0.28</td>
-										<td>0.47</td>
-										<td>0.49</td>
-										<td>0.64</td>
-										<td>0.57</td>
-										<td>0.81</td>
-										<td>0.61</td>
-										<td>0.6</td>
-										<td>0.39</td>
-										<td>0.37</td>
-										<td>0.47</td>
-										<td>0.41</td>
-										<td>0.31</td>
-										</tr>
-										<tr>
-										<td>7</td>
-										<td>
-										CongLin
-										</td>
-										<td>
-										CongLin, ZhangXu
-										</td>
-										<td>
-										Wuhan University
-										</td>
-										<td>
-										0.518
-										</td>
-										<td>0.79</td>
-										<td>0.5</td>
-										<td>0.34</td>
-										<td>0.37</td>
-										<td>0.51</td>
-										<td>0.67</td>
-										<td>0.72</td>
-										<td>0.81</td>
-										<td>0.57</td>
-										<td>0.66</td>
-										<td>0.19</td>
-										<td>0.34</td>
-										<td>0.39</td>
-										<td>0.56</td>
-										<td>0.33</td>
-										</tr>
-										<tr>
-										<!-- <td>11</td>
-										<td>
-										gxyan
-										</td>
-										<td>
-										闫国兴 王彦添
-										</td>
-										<td>
-										Wuhan University School
-										</td>
-										<td>
-										0.517
-										</td>
-										<td>0.79</td>
-										<td>0.5</td>
-										<td>0.3</td>
-										<td>0.3</td>
-										<td>0.68</td>
-										<td>0.63</td>
-										<td>0.56</td>
-										<td>0.73</td>
-										<td>0.66</td>
-										<td>0.56</td>
-										<td>0.32</td>
-										<td>0.34</td>
-										<td>0.47</td>
-										<td>0.48</td>
-										<td>0.45</td>
-										</tr> -->
-										<!-- <tr>
-										<td>12</td>
-										<td>
-										zhangxu
-										</td>
-										<td>
-										ZhangXu,CongLin
-										</td>
-										<td>
-										Wuhan University
-										</td>
-										<td>
-										0.487
-										</td>
-										<td>0.79</td>
-										<td>0.5</td>
-										<td>0.34</td>
-										<td>0.33</td>
-										<td>0.45</td>
-										<td>0.65</td>
-										<td>0.71</td>
-										<td>0.8</td>
-										<td>0.53</td>
-										<td>0.65</td>
-										<td>0.15</td>
-										<td>0.31</td>
-										<td>0.39</td>
-										<td>0.47</td>
-										<td>0.22</td>
-										</tr> -->
-										<!-- <tr>
-										<td>13</td>
-										<td>
-										ODAI
-										</td>
-										<td>
-										None
-										</td>
-										<td>
-										Wuhan University
-										</td>
-										<td>
-										0.253
-										</td>
-										<td>0.4</td>
-										<td>0.21</td>
-										<td>0.04</td>
-										<td>0.06</td>
-										<td>0.44</td>
-										<td>0.3</td>
-										<td>0.32</td>
-										<td>0.59</td>
-										<td>0.32</td>
-										<td>0.26</td>
-										<td>0.09</td>
-										<td>0.15</td>
-										<td>0.27</td>
-										<td>0.28</td>
-										<td>0.07</td>
-										</tr>
-										<tr>
-										<td>14</td>
-										<td>
-										BiQi_WHU
-										</td>
-										<td>
-										Bi Qi, Xu Xiaoxia, Zhang Han, Gu Yingzhe
-										</td>
-										<td>
-										School of Remote Sensing and Information Engineering,Wuhan University
-										</td>
-										<td>
-										0.001
-										</td>
-										<td>0.01</td>
-										<td>1.52</td>
-										<td>6.27</td>
-										<td>0.0</td>
-										<td>0.0</td>
-										<td>0.0</td>
-										<td>0.0</td>
-										<td>0.0</td>
-										<td>0.0</td>
-										<td>0.0</td>
-										<td>0.0</td>
-										<td>0.0</td>
-										<td>0.0</td>
-										<td>0.0</td>
-										<td>0.0</td>
-										</tr> -->
-										
-										
-										
-										
-										
-
-							</table>
-							
-
-
-							<!-- <h2>References</h2>
-							<ol style="font-size: 17px">
-							<li>
-								G.-S. Xia, et. al. DOTA: A Large-scale Dataset for Object Detection in Aerial Images. arXiv preprint arXiv:1711.10398, 2017.
-							</li>
-							<li>
-							   S. Ren, et. al. Faster R-CNN:
-								towards real-time object detection with region proposal networks.
-								IEEE TPAMI, 39(6):1137–1149, 2017.
-							</li>
-							<li>
-							   J. Dai, et. al. R-FCN: object detection via
-								region-based fully convolutional networks. In NIPS, pages
-								379–387, 2016.
-							</li>
-							<li>
-								J. Redmon and A. Farhadi. YOLO9000: better, faster, stronger[J]. arXiv preprint arXiv:1612.08242, 2016.
-							</li>
-							<li>
-								W. Liu, et. al. SSD: single shot multibox detector.
-								In ECCV, pages 21–37, 2016.
-							</li>
-							</ol>
-							<br><br> -->
-						</div>
+					</div>
 				</div>
 
 
@@ -871,11 +178,197 @@
 			</div>
 		</div>
 		<br>
-<div align="center">
-<a href="http://www.amazingcounters.com"><img border="0" src="http://cc.amazingcounters.com/counter.php?i=3220030&c=9660403" alt="AmazingCounters.com"></a>
-</div>
-<br>	
+		<div align="center">
+			<a href="http://www.amazingcounters.com">
+				<img border="0" src="http://cc.amazingcounters.com/counter.php?i=3220030&c=9660403" alt="AmazingCounters.com">
+			</a>
+		</div>
+		<br>
 	</div>
+
+
+	<script>
+		function format(d) {
+			// `d` is the original data object for the row
+
+			return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">' +
+				'<tr>' +
+				'<td>TeamName:</td>' +
+				'<td>' + d.TeamNames + '</td>' +
+				'</tr>' +
+				'<tr>' +
+				'<td>TeamMembers:</td>' +
+				'<td>' + d.TeamMembers + '</td>' +
+				'</tr>' +
+				'<tr>' +
+				'<td>Method:</td>' +
+				'<td>' + d.description + '</td>' +
+				// '</tr>' +
+				// '<tr>' + 
+				// '<td>Links: (not finished yet)</td>'
+				// '</tr>'
+				'</table>';
+		}
+
+		// function create_table(task) {
+		// 	$(document).ready(function () {
+		// 	var table = $('#' + task).DataTable({
+		// 		"ajax": "leaderboards/" + task + ".txt",
+		// 		"columns": [
+		// 			{
+		// 				"className": 'details-control',
+		// 				"orderable": false,
+		// 				"data": null,
+		// 				"defaultContent": ''
+		// 			},
+		// 			{ "data": "TeamNames" },
+		// 			// { "data": "Team Member" },
+		// 			// { "data": "Institute" },
+		// 			{ "data": "mAP" },
+		// 			{ "data": "Plane"},
+		// 			{ "data": "BD" },
+		// 			{ "data": "Bridge"},
+		// 			{ "data": "GTF" },
+		// 			{ "data": "SV"},
+		// 			{ "data": "LV" },
+		// 			{ "data": "Ship"},
+		// 			{ "data": "TC"},
+		// 			{ "data": "BC" },
+		// 			{ "data": "ST"},
+		// 			{ "data": "SBF" },
+		// 			{ "data": "RA"},
+		// 			{ "data": "Harbor" },
+		// 			{ "data": "SP"},
+		// 			{ "data": "HC"}
+		// 		],
+		// 		"order": [[2, 'dsc']]
+		// 	});
+
+		// 	// Add event listener for opening and closing details
+		// 	$('#Task1 tbody').on('click', 'td.details-control', function () {
+		// 		var tr = $(this).closest('tr');
+		// 		var row = table.row(tr);
+
+		// 		if (row.child.isShown()) {
+		// 			// This row is already open - close it
+		// 			row.child.hide();
+		// 			tr.removeClass('shown');
+		// 		}
+		// 		else {
+		// 			// Open this row
+		// 			row.child(format(row.data())).show();
+		// 			tr.addClass('shown');
+		// 		}
+		// 	});
+		// });
+		// }
+		
+
+		$(document).ready(function () {
+			var table = $('#Task1').DataTable({
+				"ajax": "leaderboards/Task1.txt",
+				"columns": [
+					{
+						"className": 'details-control',
+						"orderable": false,
+						"data": null,
+						"defaultContent": ''
+					},
+					{ "data": "TeamNames" },
+					// { "data": "Team Member" },
+					// { "data": "Institute" },
+					{ "data": "mAP" },
+					{ "data": "Plane"},
+					{ "data": "BD" },
+					{ "data": "Bridge"},
+					{ "data": "GTF" },
+					{ "data": "SV"},
+					{ "data": "LV" },
+					{ "data": "Ship"},
+					{ "data": "TC"},
+					{ "data": "BC" },
+					{ "data": "ST"},
+					{ "data": "SBF" },
+					{ "data": "RA"},
+					{ "data": "Harbor" },
+					{ "data": "SP"},
+					{ "data": "HC"}
+				],
+				"order": [[2, 'dsc']]
+			});
+
+			// Add event listener for opening and closing details
+			$('#Task1 tbody').on('click', 'td.details-control', function () {
+				var tr = $(this).closest('tr');
+				var row = table.row(tr);
+
+				if (row.child.isShown()) {
+					// This row is already open - close it
+					row.child.hide();
+					tr.removeClass('shown');
+				}
+				else {
+					// Open this row
+					row.child(format(row.data())).show();
+					tr.addClass('shown');
+				}
+			});
+		});
+
+
+		$(document).ready(function () {
+			var table2 = $('#Task2').DataTable({
+				"ajax": "leaderboards/Task2.txt",
+				"columns": [
+					{
+						"className": 'details-control',
+						"orderable": false,
+						"data": null,
+						"defaultContent": ''
+					},
+					{ "data": "TeamNames" },
+					// { "data": "Team Member" },
+					// { "data": "Institute" },
+					{ "data": "mAP" },
+					{ "data": "Plane"},
+					{ "data": "BD" },
+					{ "data": "Bridge"},
+					{ "data": "GTF" },
+					{ "data": "SV"},
+					{ "data": "LV" },
+					{ "data": "Ship"},
+					{ "data": "TC"},
+					{ "data": "BC" },
+					{ "data": "ST"},
+					{ "data": "SBF" },
+					{ "data": "RA"},
+					{ "data": "Harbor" },
+					{ "data": "SP"},
+					{ "data": "HC"}
+				],
+				"order": [[2, 'dsc']]
+			});
+
+			// Add event listener for opening and closing details
+			$('#Task2 tbody').on('click', 'td.details-control', function () {
+				var tr = $(this).closest('tr');
+				var row = table2.row(tr);
+
+				if (row.child.isShown()) {
+					// This row is already open - close it
+					row.child.hide();
+					tr.removeClass('shown');
+				}
+				else {
+					// Open this row
+					row.child(format(row.data())).show();
+					tr.addClass('shown');
+				}
+			});
+		});
+
+
+	</script>
 
 </body>
 
